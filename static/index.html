@@ -273,7 +273,7 @@ mouse.mousedraggers.push(function(x,y,clicked,e) {
 function update() {
     sendJSONXMLHTTPRequest("/world", null, function(updateWorld) {
         world = updateWorld; 
-        drawNext();
+        drawNextFrame();
     });
     drawFrame();
 }
